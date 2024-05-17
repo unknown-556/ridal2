@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Pop-Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Payment Pop-Up.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Payment</h2>
+        <div class="option">
+            <div class="tab active-tab" id="bank-tab">Bank Transfer</div>
+            <div class="tab" id="card-tab">Card</div>
+        </div>
+        <div class="bank-tab-content active-tab-content">
+            <h4>Bank: <span class="transfer-info">Opay</span></h4>
+            <h4>Bank Account: <span class="transfer-info">1234567890</span></h4>
+            <h4>Account Name: <span class="transfer-info">Ridal Account</span></h4>
+            <button class="copy-button" onclick="copyBankDetails()">Copy Bank Details <i
+                    class="fa-solid fa-link"></i></button>
+            <p>Note: Kindly transfer exact amount to account details above. Account number is valid for one hour.</p>
+        </div>
+
+        <div class="card-tab-content">
+            <div class="card-logos">
+                <img src="/assets/logos/visa.svg" alt="Visa" class="card-logo" id="visa-logo">
+                <img src="/assets/logos/mastercard-old.svg" alt="Mastercard" class="card-logo" id="mastercard-logo">
+                <img src="/assets/logos/verve.svg" alt="Verve" class="card-logo" id="verve-logo">
+            </div>
+            <input type="text" id="card-number" class="card-number-input" placeholder="Card Number"
+                style="width: 266px; height: 39px;">
+            <input type="text" id="card-name" class="card-name-input" placeholder="Cardholder Name"
+                style="width: 266px; height: 39px;">
+            <div class="expiry-cvv">
+                <input type="text" id="expiry-month" class="expiry-input" placeholder="MM"
+                    style="width: 48px; height: 39px;">
+                <b>/</b>
+                <input type="text" id="expiry-year" class="expiry-input" placeholder="YYYY"
+                    style="width: 69px; height: 39px;">
+                <input type="text" id="cvv" class="cvv-input" placeholder="CVV" style="width: 105px; height: 39px;">
+            </div>
+            <button id="pay-now">Pay Now</button>
+        </div>
+    </div>
+
+    <script src="/Payment Pop-Up.js"></script>
+</body>
+
+</html>

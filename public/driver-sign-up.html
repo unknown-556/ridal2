@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="/driver-sign-up.css">
+</head>
+
+<body class="center">
+  <br>
+  <h2 class="ridal-logo">RIDAL</h2>
+  
+  <div class="container">
+    <div class="form-heading">
+      <h2><b>Become A Driver</b></h2>
+    </div>
+    <div class="form-container">
+      <form id="signup-form" action="/driversign_up" method="post">
+        <div class="form-group-name">
+          <input type="text" name="FirstName" id="FirstName" placeholder="First name" required>
+          <input type="text" name="LastName" id="LastName" placeholder="Last name" required>
+        </div>
+        <div class="form-group-contact">
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
+          <!-- <input type="text" id="otp-input" placeholder="Enter OTP" required style="display: none;">
+          <button type="button" onclick="verifyOTP()" style="display: none;" id="verify-otp-btn">Verify OTP</button> -->
+        </div>
+        <div class="form-goup-password">
+          <input type="password" minlength="6" name="password" id="password" placeholder="Password" required>
+          <input type="password" name="verifypassword" id="verifypassword" minlength="6" placeholder="Confirm Password"
+            required style="margin-bottom: 10px;">
+        </div>
+        <div class="form-signup-btn center">
+          <button type="submit" onclick="signUp()">Sign Up</button>
+        </div>
+      </form>
+      <div class="form-termsAndCondition">
+        <p class="center" style="font-size: small; text-align: center;">
+          By continuing you are agreeing to our
+          <a href="#" style="font-size: larger;">terms & conditions</a> and our privacy policies
+        </p>
+      </div>
+
+      <div class="form-signup-btn center">
+        <button type="button">Continue with Google</button>
+      </div>
+
+      <div class="form-orSignUpWithGoogle center">
+        <a href="signInPage.html">
+          <img src="signasdri.png" alt="">
+        </a>
+
+      </div>
+      <div class="alreadyHaveAnAccount center">
+        <p>Already have an Account?<a href="/driver-log-in.html"> Login</a></p>
+      </div>
+      <br>
+
+      <div class="write-ups-under">
+        <p>
+        <h4>WHY DRIVE FOR RIDAL </h4>
+        <h6>
+          <ul>
+            <li>Earn on your Route to work</li>
+            <li>A reliable source of income</li>
+            <li>Daily Payouts</li>
+          </ul>
+        </h6><br>
+
+        <h4>Get Started</h4>
+        <h6>
+          <ol>
+            <li>Sign up</li>
+            <li>Set Up Profile and upload your documents</li>
+            <li>Pick subscription plan</li>
+          </ol>
+        </h6> <br>
+
+        <h4>How Ridal Driver Works</h4>
+        <ul>
+          <h6>
+            <li>Turn on availability</li>
+            <li>Accept Passengers on your Route</li>
+            <li>Drive or drop the passenger on your Route</li>
+            <li>Account goes offline automatically after the trip</li>
+          </h6>
+          <br>
+        </ul>
+        <h4>Company</h4>
+        <ul>
+          <h6>
+            <li>About Us</li>
+            <li>Customer care</li>
+            <li>Blog</li>
+          </h6>
+        </ul>
+        </p>
+        <br>
+
+        <footer>
+          <div class="bar"></div>
+          <div class="icons">
+            <img src="/assets/icons/facebook.svg" alt="Facebook Icon">
+            <img src="/assets/icons/square-x-twitter.svg" alt="X Icon">
+            <img src="/assets/icons/square-instagram.svg" alt="Instagram Icon">
+          </div>
+          <div class="copyright">&copy; 2024 Ridal Technology</div>
+          <div class="group">Group B</div>
+        </footer>
+      </div>
+    </div>
+    <!-- Modal for displaying messages -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <p id="modal-message"></p>
+      </div>
+    </div>
+    <script>
+      function signUp() {
+          window.location.href = "driverProfileSetup1.html";
+      }
+  </script>
+    <script src="/driver-sign-up.js"></script>
+</body>
+
+</html>

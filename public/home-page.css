@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  /* font-family: "Poppins", sans-serif; */
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+@font-face {
+  font-family: Heavitas;
+  src: url("/assets/fonts/Heavitas.ttf") format("truetype");
+}
+
+body {
+  background-color: #f5f0d1;
+  font-family: Heavitas, sans-serif;
+  font-size: 95%;
+}
+
+/* Nav Bar */
+
+nav {
+  background-color: #ffffff;
+  width: 100%;
+  height: 80px;
+}
+
+div.logo {
+  color: #ffd700;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-family: Poppins, sans-serif;
+  display: inline;
+  font-weight: 750;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav a {
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 7px 13px;
+}
+
+nav a.active {
+  background: #ffd700;
+  color: white;
+  transition: 0.25s;
+}
+
+nav a:hover {
+  background: #fde252;
+}
+
+.checkbtn {
+  display: none;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  line-height: 80px;
+  margin-right: 40px;
+}
+
+#check {
+  display: none;
+}
+
+/* First Section */
+.first {
+  width: 1060px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.welcome-text {
+  font-size: 35px;
+}
+
+.welcome-text span {
+  color: #ffd700;
+}
+
+.user {
+  padding: 1.5px;
+  width: 175px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.user h3 {
+  color: white;
+}
+
+.user a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Driver Application */
+section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.driver-application {
+  padding: 15px;
+  width: 1255px;
+  height: auto;
+  border-radius: 10px;
+  background: #fde252;
+  display: flex;
+  justify-content: center;
+}
+
+.apply {
+  width: 260px;
+  height: 67px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+  background-color: black;
+}
+
+div h2 {
+  width: 359px;
+  height: auto;
+  color: white;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  padding-left: 25px;
+  width: 499px;
+  height: 67px;
+}
+
+input::placeholder {
+  color: #dadada;
+  font-size: larger;
+  font-weight: 750;
+  font-family: Heavitas, sans-serif;
+}
+
+/* How it works */
+
+.how-it-works {
+  font-size: larger;
+  text-align: center;
+}
+
+.how-it-works span {
+  color: #ffd700;
+}
+
+.how-it-works h4 {
+  color: #9e9da2;
+}
+
+/* Section 4 */
+.how-it-works-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-4 {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-left: 65px;
+  text-align: center;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  background-color: #ffd700;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.circle img {
+  width: 600px;
+  object-fit: contain;
+}
+
+.how {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.item h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 50%;
+  height: 250px;
+  box-sizing: border-box;
+  text-align: start;
+  line-height: 25px;
+  padding: 20px;
+}
+
+/* Benefits */
+.benefits {
+  font-size: x-large;
+  text-align: center;
+}
+
+.benefits span {
+  color: #ffd700;
+}
+
+/* Benefits Contents */
+
+.bene {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.benefits-content {
+  width: 1060px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+}
+
+.digit {
+  font-size: 70px;
+  color: #ffd700;
+}
+
+.footer {
+  width: 100%;
+  background: #ffffff;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: black;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489c6;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+.footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #b3b3b3;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover {
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .first {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .first img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkbtn {
+    display: block;
+    margin-right: 35px;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.9s;
+  }
+
+  nav li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  nav a:hover,
+  nav a.active {
+    background: none;
+    color: #ffd700;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .first {
+    padding: 10px;
+  }
+
+  .welcome-text {
+    font-size: 28px;
+  }
+
+  .welcome-text span {
+    display: block;
+  }
+
+  .user {
+    width: 80%;
+  }
+
+  .driver-application {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .apply {
+    width: 80%;
+  }
+
+  .how-it-works-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .circle img {
+    width: 250px;
+  }
+
+  .item {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .benefits-content {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 30px;
+  }
+
+  .number {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  nav {
+    height: 60px;
+  }
+
+  div.logo {
+    font-size: 25px;
+    padding: 0 20px;
+  }
+
+  nav ul {
+    margin-right: 10px;
+  }
+
+  nav li {
+    margin: 0 3px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .first {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .welcome-text {
+    font-size: 22px;
+  }
+
+  .welcome-text span {
+    display: block;
+  }
+
+  .user {
+    width: 80%;
+  }
+
+  .driver-application {
+    width: 90%;
+  }
+
+  .apply {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .how-it-works-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .circle img {
+    width: 200px;
+  }
+
+  .item {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .benefits-content {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 20px;
+  }
+
+  .number {
+    margin-bottom: 10px;
+  }
+}

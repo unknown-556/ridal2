@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("/assets/images/ridal-car.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 15px 0px 15px;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.user-avatar img {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-status {
+  font-size: x-small;
+}
+
+.call-button {
+  height: 35px;
+  width: 35px;
+  margin-left: auto;
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.call-button:hover {
+  background-color: #ddbf15;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.menu {
+  display: none;
+}
+
+.menu.show-menu {
+  display: block;
+}
+
+.menu a {
+  display: block;
+  margin-top: 5px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffd700;
+}
+
+.vbar {
+  background-color: black;
+  height: 3px;
+  border-radius: 15px;
+  margin: 0 20px 20px;
+}
+
+/* Date */
+.date {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Chat container */
+.chat-container {
+  position: relative;
+  border-radius: 5px;
+  padding: 10px;
+  max-height: calc(100vh - 100px);
+  height: 130vh;
+  overflow-y: auto;
+  margin-bottom: 65px;
+}
+
+.chat-box {
+  margin-bottom: 10px;
+}
+
+.chat-bubble {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  word-break: break-word;
+  max-width: 300px;
+  clear: both;
+}
+
+.user-bubble {
+  background-color: #ffd700;
+  color: black;
+  float: right;
+}
+
+.bot-bubble {
+  background-color: black;
+  color: #ffd700;
+}
+
+.input-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffd700;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  border-radius: 27px;
+}
+
+.input-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  flex: 1;
+  border: none;
+  border-radius: 27px;
+  font-size: 1rem;
+  background-color: #ffd700;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+.input-container input::placeholder {
+  color: #443b0a;
+  font-family: "Poppins", sans-serif;
+}
+
+.input-container button {
+  margin-top: 2.5px;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.input-container button:hover {
+  transition: 0.25s;
+  color: #ddbf15;
+  background-color: black;
+}
+
+.input-container button i {
+  margin-top: 1px;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 320px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .user-info {
+    margin-bottom: 5px;
+  }
+
+  .menu-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+
+  .user-avatar img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user-name,
+  .user-status {
+    font-size: 0.9rem;
+  }
+
+  .call-button {
+    height: 30px;
+    width: 30px;
+    font-size: 0.9rem;
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+
+  .menu {
+    margin-top: 5px;
+  }
+
+  .menu a {
+    font-size: 0.8rem;
+  }
+
+  .input-container {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .input-container input[type="text"] {
+    padding: 8px;
+  }
+
+  .input-container button {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .input-container button i {
+    font-size: 0.9rem;
+  }
+
+  .chat-container {
+    padding-bottom: 60px;
+  }
+}
